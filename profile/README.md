@@ -6,37 +6,34 @@
 
 All of the project management we take a place with Github repository, to distinguish each path we create a different repository.</p>
 
-## Our Machine Learning Member
-|            Nama                 |  Bangkit ID  |       Path         |
-|:-------------------------------:|:------------:|:------------------:|
-|  Eko Nur Cahyo                  |  M7110F1434  | Machine Learning   |
-|  Rizal Saifulloh Fatah          |  M2110F1433  | Machine Learning   |
-|  Ahmad Khasan Abdullah          |  A2258F2241  | Mobile Development |
-|  Resha Digitha Iswara           |  A7279F2406  | Mobile Development |               
-|  David Tanri                    |  C2008F0865  | Cloud Computing    |
-|  Virgiawan Sagarmata Patabuga   |  C7258F2246  | Cloud Computing    |
-
-
+## Our Capstone Member
+|            Nama            |  Bangkit ID  |       Path         |
+|:--------------------------:|:------------:|:------------------:|
+|Eko Nur Cahyo                |  M7110F1434  | Machine Learning   |
+|Rizal Saifulloh Fatah        |  M2110F1433  | Machine Learning   |
+|Akhmad Khasan Abdullah       |  A2258F2241  | Mobile Development |
+|Resha Digitha Iswara         |  A7279F2406  | Mobile Development |
+|Virgiawan Sagarmata Patabuga |  C7258F2246  | Cloud Computing    |
+|David Tanri                  |  C2008F0865  | Cloud Computing    |
 
 
 ## Simple Description About Our Project
 In this project we created a machine learning that is used to detect a waste and classify the waste into several classifications including 
-- cardboard 
-- metal 
+- cardboard
+- metal
 - glass
 - plastic
 - paper 
 <br>Then we also give some decisions for the results by showing the accuracy of the predictions.
 
-## Our Infrastructure
+## Tech stack
 ![Machine Learning Infrastructure](https://raw.githubusercontent.com/Bangkit-Capstone-C22-PS085/kalpataru-waste-classification/master/assets/infrastructure.png)
 
 ## Our Import Library on Project
 For development you must install several import in your local computer (on Jupyter Notebook) or you can run on Google Colaboratory:
 ```text
 flask==2.1.2
-matplotlib==
-zipfile==3.10.5
+matplotlib==3.4.3
 tensorflow==2.8.0
 numpy==1.22.3
 Pillow==9.0.1
@@ -45,7 +42,23 @@ gunicorn==20.1.0
 ```
 
 For using our project you must clone this machine learning project at first, this below the link:
-`git clone https://github.com/Bangkit-Capstone-C22-PS085/kalpataru-waste-classification.git`
+<br>
+
+```bash
+# cloning project ML
+$ git clone https://github.com/Bangkit-Capstone-C22-PS085/kalpataru-waste-classification.git
+
+# build docker image
+$ cd kalpataru-waste-classification
+$ cd api-services-model
+$ docker build -t waste-predict-api .
+
+# run container
+$ docker container run  -p {port host}:5000 --name api-model-trashnet
+```
+
+
+
 after you clone you can use our machine learning project. Then you can use our main machine learning file
 `waste_classification.ipynb` our has a several model, you can choose model dependent on your need, you can check on `/api-services-model/model_ml/` `trash-classification.h5` and `trash_exception.h5`.
 
