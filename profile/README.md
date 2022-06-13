@@ -46,8 +46,8 @@ Cloud Computing in here as backend services to connect from machine learning mod
 
 ## Tech stack
 ![Machine Learning Infrastructure](https://raw.githubusercontent.com/Bangkit-Capstone-C22-PS085/kalpataru-waste-classification/master/assets/infrastructure.png)
-![Mobile Development Infrastructure](https://drive.google.com/file/d/1G01-VFEXCV7QaIxf6rVrXgJSwc65pQGL/view)
-![Cloud Computing Infrastructure](https://drive.google.com/file/d/1PI4k76N7-kEwrVLtXUxi1bmifH-6-pgp/view)
+![Mobile Development Infrastructure](https://raw.githubusercontent.com/Bangkit-Capstone-C22-PS085/.github/main/MD.png)
+![Cloud Computing Infrastructure](https://raw.githubusercontent.com/Bangkit-Capstone-C22-PS085/.github/main/CC.png)
 
 
 ## Our Import Library on Project
